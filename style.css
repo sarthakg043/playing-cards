@@ -1,0 +1,112 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Wellfleet&display=swap');
+@font-face {
+    font-family: 'Card Font';
+    src: url(assets/fonts/CARDC___.TTF);
+}
+@font-face {
+    font-family: 'Royal Flush';
+    src: url(assets/fonts/RoyalFlushRegular-Dev1.ttf);
+}
+@font-face {
+    font-family: 'Poker Kings';
+    src: url(assets/fonts/PokerKingsRegular-36K8.ttf);
+}
+  
+div {
+    font-family: myFirstFont;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Poker Kings', 'Card Font', 'Wellfleet', 'Pacifico', 'Dancing Script', cursive, serif;
+    background-color: #000;
+    color: #fff;
+}
+
+#main_heading{
+    text-align: center;
+    font-size: 5.5em;
+    letter-spacing: 4px;
+}
+
+/* .container{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+#playing_area{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card_box{
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+}
+
+.btn_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.btn_area > button{
+    background-color: #fa447a;
+    font-family: cursive;
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 20px;
+    outline: none;
+    color: yellow;
+    font-weight: 700;
+    /*-webkit-text-stroke: 1px red;*/
+    border-left-color: #4add7f;
+    border-top-color: #4add7f;
+    border-right-color: #4a447a;
+    border-bottom-color: #4a447f;
+    box-shadow: 2px 2px #4aaa7f,
+                4px 4px #3a0fe0,
+                6px 6px #27af29;
+    transition: 0.3s;
+}
+.btn_area > button:active{
+    box-shadow: none;
+    border: none;
+    color: white;
+    background-color: cyan;
+    transform: translate(30%,30%);
+    /*-webkit-text-stroke: 0px;*/
+}
+.win_board{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#winner{
+    font-size: 5.5em;
+    color: rgb(34, 169, 34);
+    font-family: 'Card Font';
+    text-shadow: 2px 2px #fff,
+                 -2px -2px #fff,
+                 2px 0px #fff,
+                 0px 2px #fff,
+                 -2px 0px #fff,
+                 0px -2px #fff,
+                 0px 0px 2px #fff,
+                 0px 0px 5px #ffff,
+                 0px 0px 10px #fffd,
+                 0px 0px 50px #fffa;
+    letter-spacing: 7px;
+    text-align: center;
+}
